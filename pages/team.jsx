@@ -9,7 +9,7 @@ export default function Projects(initialData) {
     return (
         <SimpleLayout>
             <Head>
-                <title>Kakotsu Team - Team</title>
+                <title>Kakotsu - Team</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <div className="col">
