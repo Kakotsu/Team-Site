@@ -17,7 +17,9 @@ export default function SimpleLayout(props) {
         {props.preContainer && props.preContainer}
         <div className="album py-5 bg-light">
           <div className="container">
-            {props.children}
+            <motion.main variants={variants} initial="hidden" animate="enter" exit="exit" transition={{ type: 'linear' }} className="">
+                {props.children}
+            </motion.main>
           </div>
         </div>
       </main>
@@ -25,7 +27,3 @@ export default function SimpleLayout(props) {
     </>
   )
 }
-
-// <motion.main variants={variants} initial="hidden" animate="enter" exit="exit" transition={{ type: 'linear' }} className="">
-//   {props.children}
-// </motion.main>
