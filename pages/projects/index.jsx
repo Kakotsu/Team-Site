@@ -3,6 +3,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import Head from "next/head";
+import Link from 'next/link';
 
 
 export default function Projects(initialData) {
@@ -16,46 +17,25 @@ export default function Projects(initialData) {
                 <section className="jumbotron text-center">
                     <div className="container">
                         <h1>Projects</h1>
+                        <p1>We do a lil' trolling</p1>
                     </div>
                 </section>
             </div>
             <div className="col">
                 <div className="row">
-                    <div className="col-md-4" style={{paddingBottom: '15px', paddingTop: '15px'}}>
-                        <div className="card" style={{width: 'auto'}}>
-                            <img className="card-img-top" src="/projects/takumi.png" alt="Card image cap" />
-                            <div className="card-body">
-                                <h3 className="card-title">Takumi TS</h3>
+                    <div className="col-md-4" style={{ paddingBottom: '15px', paddingTop: '15px' }}>
+                        <Link href='/projects/takumi'>
+                            <div className="card" style={{ width: 'auto', cursor: 'pointer' }}>
+                                <img className="card-img-top" src="/projects/takumi.png" alt="Card image cap" />
+                                <div className="card-body">
+                                    <h3 className="card-title">Takumi</h3>
 
-                                <div className="chip bg-light">
-                                    2021
+                                    <div className="chip bg-light">
+                                        Discord bot, 3 Languages
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="col-md-4" style={{paddingBottom: '15px', paddingTop: '15px'}}>
-                        <div className="card" style={{width: 'auto'}}>
-                            <img className="card-img-top" src="/projects/takumi.png" alt="Card image cap" />
-                            <div className="card-body">
-                                <h3 className="card-title">Takumi JS</h3>
-
-                                <div className="chip bg-light">
-                                    2020
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-4" style={{paddingBottom: '15px', paddingTop: '15px'}}>
-                        <div className="card" style={{width: 'auto'}}>
-                            <img className="card-img-top" src="/projects/takumi.png" alt="Card image cap" />
-                            <div className="card-body">
-                                <h3 className="card-title">Takumi Py</h3>
-
-                                <div className="chip bg-light">
-                                    2019
-                                </div>
-                            </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
